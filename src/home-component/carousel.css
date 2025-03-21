@@ -1,0 +1,33 @@
+/* src/App.css or your custom CSS file */
+
+.carousel-inner {
+    height: 530px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .carousel-item {
+    height: 100%; /* Ensures the item fills the carousel container */
+  }
+  
+  .carousel-image {
+    object-fit: cover; /* Ensures the image covers the entire space */
+    height: 100%; /* Makes the image height the same as the carousel's height */
+    width: 100%; /* Makes the image width 100% of the carousel's width */
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-inner {
+      height: auto!important /* Adjust the height for smaller screens */
+    }
+    .carousel-image{
+      object-fit: cover;
+      height: 43%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-inner {
+      height: 60vh; /* Further adjust height for smaller screens */
+    }
+  }

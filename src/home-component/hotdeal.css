@@ -1,0 +1,159 @@
+/* HotDeal.css */
+
+.hotdeal-container {
+    width: 100%;
+    height: auto; /* Fixed height for the component */
+    border: 2px solid red; /* Red border around the component */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 10px;
+  }
+  
+  .hotdeal-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .hotdeal-left {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    
+  }
+  
+  .hotdeal-title {
+    font-size: 32px;
+    /* font-weight: bold; */
+    color: #333;
+  }
+  
+  .hotdeal-description {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .view-all-btn {
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color:d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    background: #f5f5f5;
+    color: #111;
+    font-size: 92.85%;
+    text-transform: uppercase;
+    padding: 0 45px;
+    height: 48px;
+    line-height: 48px;
+    display: inline-block;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+  
+  .view-all-btn:hover {
+    background-color:#FF6D33;
+  }
+  
+  .hotdeal-right {
+    flex: 2;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .product-card {
+    width: 18%; /* 5 products in one row */
+    height: 100%;
+    position: relative;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    border-radius: 2px;
+    transition: transform 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 188px;
+    object-fit: cover;
+    padding: 5px;
+    background-color: #eeecec;
+  }
+  
+  .product-icons {
+    position: absolute;
+    bottom: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .cart-icon,
+  .buy-icon {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .product-card:hover .cart-icon,
+  .product-card:hover .buy-icon {
+    opacity: 1; /* Show icons when hovering over the product */
+  }
+  .product-details {
+    flex: 1 1;
+    text-align-last: center;
+}
+
+/* Product Details */
+.product-details {
+  padding: 10px;
+  text-align: left;
+}
+
+.battery-info,
+.product-price {
+  font-size: 14px;
+  color: #555;
+}
+
+.stars-info {
+  font-size: 14px;
+  color: #f39c12;
+  margin: 5px 0;
+}
+
+.filled-star {
+  color: gold;
+}
+
+.empty-star {
+  color: lightgray;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+
+  

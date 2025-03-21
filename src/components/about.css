@@ -1,0 +1,81 @@
+/* Main container */
+.about-us-container {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Header */
+  .about-us-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .about-us-header p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Section */
+  .about-us-section {
+    margin-bottom: 2rem;
+  }
+  
+  .about-us-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .about-us-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .about-us-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1rem;
+  }
+  
+  .about-us-section li {
+    margin-bottom: 1rem;
+  }
+  
+  .about-us-section li strong {
+    color: #fabf4a;
+  }
+  
+  /* Footer */
+  .about-us-footer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #ddd;
+  }
+  
+  .about-us-footer h2 {
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .about-us-footer p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-us-container {
+      padding: 1rem;
+    }
+  
+    .about-us-header h1 {
+      font-size: 2rem;
+    }
+  
+    .about-us-section h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

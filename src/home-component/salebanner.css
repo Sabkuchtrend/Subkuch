@@ -1,0 +1,83 @@
+/* BannerSection.css */
+
+/* General container styles */
+.banner-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Left, Middle, Right layout */
+    gap: 20px;
+    align-items: center;
+    /* margin: 10px; */
+    margin-top: 60px;
+  }
+  
+  /* Left and Right sections: two images stacked vertically */
+  .banner-left,
+  .banner-right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .left-top, .right-top, .left-bottom, .right-bottom {
+    margin-bottom: 10px;
+  }
+  
+  .left-image, .right-image {
+    width: 458px;
+    height: 250px;
+    border-radius: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Middle section: main large image */
+  .banner-middle {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .middle-image {
+    width: 100%;
+    height: auto;
+    max-width: 530px;
+    border-radius: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive design for smaller screens (tablets and mobile) */
+  @media (max-width: 768px) {
+    .banner-container {
+      grid-template-columns: 1fr; /* Stack the sections vertically on smaller screens */
+      text-align: center;
+    }
+  
+    .banner-left, .banner-right {
+      /* flex-direction: row; */
+      justify-content: center;
+    }
+  
+    .left-top, .left-bottom, .right-top, .right-bottom {
+      margin: 10px;
+    }
+  
+    .left-image, .right-image {
+      width: 45%;
+      margin: 5px;
+    }
+  
+    .middle-image {
+      width: 530px;
+      height: 530px;
+    }
+  }
+  
+  /* For smaller screens (mobile) */
+  @media (max-width: 480px) {
+    .left-image, .right-image {
+      width: 100%; /* Make images full width on smaller screens */
+      margin: 0;
+    }
+  
+    .middle-image {
+      width: 100%;
+    }
+  }
+  

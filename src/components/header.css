@@ -1,0 +1,139 @@
+ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    margin-left: 225px;
+}
+
+@media (max-width : 768px) {
+    ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+        margin-left: 5px;
+    }
+
+    button#dropdownMenu {
+        margin-right: 128px;
+        padding: 0px !important;
+    }
+
+    .leftlogo {
+        margin-right: 0px !important;
+    }
+
+}
+
+/* header css */
+.callus {
+    color: aliceblue;
+    margin-top: 18px;
+    font-size: medium;
+    font-weight: bold;
+
+}
+
+.leftlogo {
+    margin-right: 104px;
+}
+
+/* CSS for the navbar */
+.navbar {
+    position: relative;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .row {
+    width: 100%;
+}
+
+.navbar .col-12.col-md-2 {
+    text-align: center;
+}
+
+.navbar .col-12.col-md-8 {
+    text-align: center;
+}
+
+.navbar .col-12.col-md-2.d-flex {
+    justify-content: flex-end;
+    /* Right-aligning the icons on larger screens */
+    align-items: center;
+}
+
+
+/* Ensure on smaller screens, the right section will have a margin */
+@media (max-width: 768px) {
+    .navbar .col-12.col-md-2.d-flex {
+        justify-content: center;
+        /* Keep the right section centered */
+    }
+
+    .col-12.col-md-8.d-flex.align-items-center.justify-content-center {
+        /* width: 370px; */
+        margin-left: 23px;
+    }
+
+    .navbar .col-12.col-md-8 {
+        margin-top: 15px;
+        /* Space between logo and search bar */
+    }
+    .callus{
+        color: aliceblue;
+        margin-top: 0px;
+        font-size: medium;
+        font-weight: bold;
+        display: none;
+      
+      }
+      nav.navbar.bg-dark {
+        display: none;
+    }
+    .dropdown.mx-auto {
+        display: none;
+    }
+    .Mobileleftlogo{
+        display:inline!important;
+    }
+    button.navbar-toggler {
+        background: white;
+    }
+    nav.navbar.navbar-expand-lg.bg-body-tertiary.belowbar {
+        background-color: black !important;
+    }
+    div#navbarSupportedContent {
+        background: white !important;
+        border-radius: 8px;
+    }
+    .MobilesearchBar{
+        display: inline!important;
+    }
+    
+
+}
+.Mobileleftlogo{
+    display: none;
+}
+.MobilesearchBar{
+    display: none;
+}
+/* Prevent horizontal scrolling */
+body {
+    overflow-x: hidden;
+  }
+  
+  /* Optional: Prevent header section from causing overflow */
+  .navbar {
+    overflow: hidden; /* This hides any overflow from the navbar */
+  }
+  
+  /* Optional: Make sure navbar items are not overflowing */
+  .navbar .container-fluid {
+    max-width: 100%; /* Ensures that the navbar container width doesn't exceed the screen */
+  }
+  
+  /* Ensure images or large elements do not exceed the screen */
+  .navbar img {
+    max-width: 100%;
+    height: auto;
+  }
+  
